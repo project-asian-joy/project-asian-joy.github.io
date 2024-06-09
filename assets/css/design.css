@@ -240,7 +240,7 @@ div.picture-container:nth-child(8) {
 }
 
 @media only screen and (max-width: 950px) {
-    .hero .item1 {
+    .hero .item1, .hero .item2, .hero .item3 {
         background-size: 300px;
         background-position: 10% 35%;
     }
