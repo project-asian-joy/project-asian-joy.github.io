@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problama Llama</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="js/timbre.js"></script>
+</head>
+<body>
+
+    <!-- start scene -->
+    <div id="scene_splash" class="scene_splash">
+        <h1>Problama Llama</h1>
+        <p id="dialogue" class="splash_start">Press <a onclick="nextScene()">START</a> to begin</p>
+    </div>
+ 
+    <!-- game intro scene -->
+    <div id="grid-container-intro" class="grid-container grid-container-intro">
+        <div id="scene_gameIntro" class="scene_gameIntro">
+            <p id="dialogue">
+                ¡Hola! my fellow fuzzy neighbors! Oh? Are we missing someone? Who is your female partner again?
+                <br><br>***
+                <br><br> Let's start with the basics in computer programming!
+                <br><br>A string is a data type, such as an integer and floating point unit, 
+                but is used to represent text rather than numbers. It is comprised of a set of
+                 characters that can also contain spaces and numbers and is typically enclosed 
+                 by single or double quotes. A string is attached to a variable after being assigned
+                 using the = operator. 
+
+                 <br><br>Enter your input in the lower right view and see the corresponding code in the upper right view. 
+            </p>
+        </div>
+        <div id="code_view" class="code_view">
+            <p id="code_content" class="code_content">
+                var llamaName = "<span id="name_input"></span>";
+                <br>
+                var llamaAdj = "<span id="nameAdj_input"></span>";
+                <br>
+                var llama = llamaAdj + " " llamaName; 
+                <br><br>
+                ***
+                <br><br>
+                console.log(llama);
+                <br>
+                <span id="nameAdj_input_2"></span> <span id="name_input_2"></span>
+
+            </p>
+        </div>
+        <div id="player_input" class="player_input">
+            Who's the llama again?
+            <br><br>
+            <label for="name">Llama Name (between <br>3 to 16 characters):</label>
+            <input type="text" id="name" name="name" required
+                minlength="3" maxlength="16" size="25" oninput="updateName()">
+            <br><br>
+            <label for="name">Descriptive Adjective:<br></label>
+            <input type="text" id="nameAdj" name="nameAdj" required
+                    size="25" oninput="updateName()">
+            <br><br>
+                <a class="button" onclick="setName()" style="background-color:rgba(245, 39, 116, 0.24);">I remember now!</a>
+        </div>    
+    </div>
+
+    <div id="grid-container-intro-headOut" class="grid-container grid-container-intro-headOut">
+        <div id="scene_gameIntro_headOut" class="scene_gameIntro_headOut">
+            <p id="dialogue">Ah, right— who can forget <span id="llama"></span>? 
+                Loves to wander around and graze in open spaces, even though your owner Maria
+                has so much open space here, too. What a problama llama! 
+                <br><br>There, there. Don't worry, I'll keep a lookout for her. I'm sure she'll be okay.
+                <br><br>Off I go to find <span id="llama" class="pink"></span> - let's <a onclick="nextScene()">HEAD OUT</a>!</p>
+        </div>
+        <div id="code_view" class="code_view">
+            <p id="code_content" class="code_content"></p>
+        </div>
+        <div id="player_input" class="player_input"></div>    
+    </div>
+
+
+    <!-- game found llama scene -->
+    <div id="grid-container-foundLlama" class="grid-container grid-container-foundLlama">
+        <div id="scene_gameFoundLlama" class="scene_gameFoundLlama">
+            <p id="dialogue">Found you, <span id="llama_2"></span>! Living up the llama life, I see?
+                Let's go home now, shall we? Your partner misses you.
+
+                <br><br>Have your head in the grass, do you? Since you communicate via humming, how
+                about I hum a song from the village?
+            </p>
+        </div>
+        <div id="code_view" class="code_view">
+            <p id="code_content" class="code_content">&lt;audio id=&quot;audio&quot; src=&quot;<span id="music_input"></span>&quot; autoplay loop&gt;</audio>
+            </p>
+        </div>
+        <div id="player_input" class="player_input">
+            <a class="button" onclick="playRelaxing()" style="background-color:rgba(245, 39, 116, 0.24);">Relaxing</a>
+            <a class="button" onclick="playEasygoing()" style="background-color:rgba(245, 39, 116, 0.24);">Easygoing</a>
+            <a class="button" onclick="playInspiring()" style="background-color:rgba(245, 39, 116, 0.24);">Inspiring</a>
+            <br><br>
+            <a class="button" onclick="setMusic()" style="background-color:rgba(245, 39, 116, 0.24);">Hum Tune</a>
+        </div>    
+    </div>
+
+    <div id="grid-container-foundLlama-follow" class="grid-container grid-container-foundLlama-follow">
+        <div id="scene_gameFoundLlama_follow" class="scene_gameFoundLlama_follow">
+            <p id="dialogue">¡<i>Hurra</i>! <span id="llama_4"></span>'s ears perked up upon hearing
+                the tune and started following along. <br><br><a onclick="nextScene()">ONWARD</a>!</p>
+        </div>
+        <div id="code_view" class="code_view">
+            <p id="code_content" class="code_content"></p>
+        </div>
+        <div id="player_input" class="player_input">
+        </div>    
+    </div>
+    
+
+    <!-- game bridge scene -->
+    <div id="grid-container-bridge" class="grid-container grid-container-bridge">
+        <div id="scene_gameBridge" class="scene_gameBridge">
+            <p id="dialogue">¡Dios mío! Unlike most llamas, which generally love playing in water, 
+                this one absolutely cannot stand water, even in a shallow river that only goes up to 
+                her ankles. What a problama llama!
+                <br><br> 
+                ¡<i>Tengo una idea</i>! Why don't we add sand and dirt to create a connecting path?
+                We can do this by creating lyrics to the tune we hummed; the lyrics have 
+                to be long enough.</p>
+            <div class="connecting_path_container">
+                <p id="connecting_path"></p>
+            </div>
+        </div>
+        <div id="code_view" class="code_view">
+            <div class="code_view_container">
+                <p id="code_content">&lt;p id=&quot;connecting_path&quot;&gt;<span id="cpath_input"></span>&lt;/p&gt;</p>
+            </div>
+        </div>
+        <div id="player_input" class="player_input">
+            <form>
+                <textarea id="player_input_cpath" placeholder="Type a long enough string here to create a stable walkway on which to cross the river." oninput="updateCPath()"></textarea>
+            </form>
+            <a class="button" onclick="checkCPathLen()" style="background-color:rgba(245, 39, 116, 0.24);">Submit</a>
+        </div>    
+    </div> 
+
+    <!-- game bridge scene -->
+    <div id="grid-container-bridge-done" class="grid-container grid-container-bridge-done">
+        <div id="scene_gameBridge_done" class="scene_gameBridge_done">
+            <p id="dialogue">¡<i>Pitri mitri</i>! You made it across the shallow river 
+                with no probllama! At least <span id="llama_3"></span> is not spitting at you out of distress! 
+                <br><br>All that's left is to <a onclick="nextScene()">HEAD HOME</a>
+            </p>
+            <div class="connecting_path_container">
+                <p id="connecting_path">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </p>
+            </div>
+        </div>
+        <div id="code_view" class="code_view">
+            <p id="code_content" class="code_content"></p>
+        </div>
+        <div id="player_input" class="player_input">
+        </div>        
+    </div> 
+    
+
+    <!-- game end scene -->
+    <div id="scene_gameEnd" class="scene_gameEnd">
+        <p id="dialogue">
+            
+            ¡<i>Muchas felicidades</i>! What a sight to behold: a warm, neighborly hello, 
+            llamas grazing and guarding sheep, a sunny day perfect for growing crops to sell...
+
+            <br><br>Using the HTML code from previous scenes, you shaped how this end scene
+            turned out— from the song being played to the actual song lyrics! 
+
+            <br><br> This game was made using only HTML, CSS, and JavaScript, and you've
+            just picked up some HTML. Imagine the games you can create if you learned more!
+            We hope this is the beginning of your coding journey. 
+    
+            <br><br>Press <a onclick="nextScene()">PLAY AGAIN</a> to start over</p>
+
+            <p id="song"></p>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+    <audio id="audio" src="assets/sfx/music_start.mp3" autoplay loop></audio>
+</body>
+</html>

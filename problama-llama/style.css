@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+body {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Salsa', cursive;
+    font-size: 80px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.scene_splash,
+.scene_gameIntro,
+.scene_gameIntro_headOut,
+.scene_gameFoundLlama,
+.scene_gameFoundLlama_follow,
+.scene_gameBridge,
+.scene_gameBridge_done,
+.scene_gameEnd {
+    position: relative;
+/*
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+*/
+    width: 900px; 
+    height: 600px;
+    background-size: 900px 600px;
+}
+
+.scene_splash,
+.scene_gameEnd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.scene_gameIntro,
+.scene_gameIntro_headOut,
+.scene_gameFoundLlama,
+.scene_gameFoundLlama_follow,
+.scene_gameBridge,
+.scene_gameBridge_done,
+.scene_gameEnd {
+    visibility: hidden;
+}
+
+.scene_gameIntro.activeInfo,
+.scene_gameEnd.activeInfo
+ {
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 10;
+}
+
+#dialogue {
+    position: relative;
+    top: 5%;
+    left: 9%;
+    padding: 15px;
+    background-color: rgba(0,0,0,.7);
+    width: 710px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.splash_start {
+    top: 75%;
+}
+
+span.pink {
+    color: rgba(245, 39, 116, 0.8); 
+}
+
+
+/*************************************/
+/* game layout */
+/*************************************/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color: rgba(245, 39, 116, 0.24); 
+    padding: 10px;  
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 1180px; 
+    height: 600px;
+    visibility: hidden;
+}
+
+.scene_gameIntro,
+.scene_gameFoundLlama,
+.scene_gameFoundLlama_follow,
+.scene_gameIntro_headOut,
+.scene_gameBridge,
+.scene_gameBridge_done
+{
+    grid-row: 1 / span 2;
+}
+
+.code_view,
+.player_input {
+    width: 235px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.code_view {
+    background-color: black;
+    color: greenyellow;
+}
+
+.player_input {
+    background-color:white;
+    color: black;
+    font-family: 'Salsa', cursive;
+
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.button {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #773E23 5%, #6A381F 100%);
+	background-color:#DCAB6B;
+	border-radius:10px;
+	border:1px solid #6E0D25;
+    margin-top: 10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:18px;
+    width: 175px;
+    text-align: center;
+	padding:10px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5A2511;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #6A381F 5%, #773E23 100%);
+	background-color:#DCAB6B;
+    text-decoration:none;
+
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+
+/*************************************/
+/* scene-specific */
+/*************************************/
+
+.scene_splash {
+    background: url("assets/img/intro.png");
+}
+
+/*************************************/
+
+.scene_gameIntro {
+    background: url("assets/img/scene01_setout.png");
+}
+
+.scene_gameIntro_headOut {
+    background: url("assets/img/scene01_setout.png");
+}
+
+
+/*************************************/
+
+.scene_gameFoundLlama {
+    background: url("assets/img/scene03_foundLlama.png");
+}
+
+.scene_gameFoundLlama_follow {
+    background: url("assets/img/scene03_foundLlama_follow.png");
+}
+
+/*************************************/
+
+.scene_gameBridge {
+    background: url("assets/img/scene05_bridge.png");
+}
+
+
+#connecting_path {
+    position: absolute;
+    top: 475px;
+    left: 100px;
+    background-image: linear-gradient(to right, #0c1c28, #112a35, #071219);
+    padding: 15px;
+}
+
+#cpath_input {
+    max-width: 100px;
+}
+
+.code_view_container {
+    width: 100%;
+
+}
+
+/*************************************/
+
+.scene_gameBridge_done {
+    background: url("assets/img/scene05_bridge_crossed.png");
+}
+
+
+/*************************************/
+
+.scene_gameEnd {
+    background: url("assets/img/scene06_endScene.jpg");
+}
+
+#song {
+    position: relative;
+    top: 10%;
+    left: 9%;
+    padding: 15px;
+    background-color: rgb(37, 150, 190, .5);
+    width: 710px;
+    border-radius: 5px;
+    text-align: center;
+}

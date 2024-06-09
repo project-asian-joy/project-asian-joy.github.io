@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* gallery section starts */
 .gallery_section span, .gallery_section b {
     font-size: 1.2rem;
@@ -34,9 +36,13 @@
     min-height: 100vh;
     padding: 2rem 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(9, 9rem);
+    grid-template-rows: repeat(7, 9rem);
     grid-gap: 1.5rem;
     animation: fade-and-slide-in 2000ms 1 forwards cubic-bezier(0.17, 0.91, 0.73, 1.03);
+}
+
+.item3 .gallery_section .staggered-grid {
+    grid-template-rows: repeat(4, 9rem);
 }
 @keyframes fade-and-slide-in {
     0% {
@@ -53,10 +59,15 @@
     background-size: auto 100%;
     background-repeat: no-repeat;
     border-radius: 2rem;
-    box-shadow: 0 0 0.75rem 0.25rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.75rem 0.25rem rgba(0, 0, 0, 1);
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
 }
 .picture-container:hover a {
     opacity: 1;
@@ -104,54 +115,81 @@ div.picture-container:nth-child(8) {
 }
 
 .item1 div.picture-container:nth-child(1) {
-    background-image: url(../images/designs/ui_ux/1.svg);
+    background-image: url(../images/designs/culture/liondance.jpg);
 }
 .item1 div.picture-container:nth-child(2) {
-    background-image: url(../images/designs/ui_ux/2.svg);
+    background-image: url(../images/designs/culture/photo-lines.jpg);
 }
 .item1 div.picture-container:nth-child(3) {
-    background-image: url(../images/designs/ui_ux/3.svg);
+    background-image: url(../images/designs/culture/photo-liondance.jpg);
 }
 .item1 div.picture-container:nth-child(4) {
-    background-image: url(../images/designs/ui_ux/4.svg);
+    background-image: url(../images/designs/culture/printmaking.jpg);
 }
 .item1 div.picture-container:nth-child(5) {
-    background-image: url(../images/designs/ui_ux/5.svg);
+    background-image: url(../images/designs/culture/ImperialChineseGarden.png);
 }
 .item1 div.picture-container:nth-child(6) {
-    background-image: url(../images/designs/ui_ux/6.svg);
+    background-image: url(../images/designs/culture/lookingatyou.jpg);
 }
 .item1 div.picture-container:nth-child(7) {
-    background-image: url(../images/designs/ui_ux/7.svg);
+    background-image: url(../images/designs/culture/7.svg);
 }
 .item1 div.picture-container:nth-child(8) {
-    background-image: url(../images/designs/ui_ux/8.svg);
+    background-image: url(../images/designs/culture/8.svg);
 }
 
 .item2 div.picture-container:nth-child(1) {
-    background-image: url(../images/designs/mockups/1.svg);
+    background-image: url(../images/designs/nature/blackcherry.jpg);
 }
 .item2 div.picture-container:nth-child(2) {
-    background-image: url(../images/designs/mockups/2.svg);
+    background-image: url(../images/designs/nature/silkpainting.jpg);
 }
 .item2 div.picture-container:nth-child(3) {
-    background-image: url(../images/designs/mockups/3.svg);
+    background-image: url(../images/designs/nature/slikdyeing.jpg);
 }
 .item2 div.picture-container:nth-child(4) {
-    background-image: url(../images/designs/mockups/4.svg);
+    background-image: url(../images/designs/nature/ikebana.jpg);
 }
 .item2 div.picture-container:nth-child(5) {
-    background-image: url(../images/designs/mockups/5.svg);
+    background-image: url(../images/designs/nature/mandala.jpg);
 }
 .item2 div.picture-container:nth-child(6) {
-    background-image: url(../images/designs/mockups/6.svg);
+    background-image: url(../images/designs/nature/snake.jpg);
 }
 .item2 div.picture-container:nth-child(7) {
-    background-image: url(../images/designs/mockups/7.svg);
+    background-image: url(../images/designs/nature/7.svg);
 }
 .item2 div.picture-container:nth-child(8) {
-    background-image: url(../images/designs/mockups/8.svg);
+    background-image: url(../images/designs/nature/8.svg);
 }
+
+
+.item3 div.picture-container:nth-child(1) {
+    background-image: url(../images/designs/narrative/CtrlAltDel.png);
+}
+.item3 div.picture-container:nth-child(2) {
+    background-image: url(../images/designs/narrative/ProblamaLlama.png);
+}
+.item3 div.picture-container:nth-child(3) {
+    background-image: url(../images/designs/narrative/IHT_photo.png);
+}
+.item3 div.picture-container:nth-child(4) {
+    background-image: url(../images/designs/narrative/4.svg);
+}
+.item3 div.picture-container:nth-child(5) {
+    background-image: url(../images/designs/narrative/5.svg);
+}
+.item3 div.picture-container:nth-child(6) {
+    background-image: url(../images/designs/narrative/6.svg);
+}
+.item3 div.picture-container:nth-child(7) {
+    background-image: url(../images/designs/narrative/7.svg);
+}
+.item3 div.picture-container:nth-child(8) {
+    background-image: url(../images/designs/narrative/8.svg);
+}
+
 
 .container_gallery {
     padding-top: 5px;
@@ -161,7 +199,7 @@ div.picture-container:nth-child(8) {
 .container_gallery h2 {
     text-align: center;
 }
-.container_gallery .item1,  .container_gallery .item2{
+.container_gallery .item1,  .container_gallery .item2, .container_gallery .item3{
     margin-top: 100px;
 }
 /* gallery section ends */
@@ -198,7 +236,6 @@ div.picture-container:nth-child(8) {
     font-size: 33px;
 }
 .item2 p {
-    letter-spacing: 10px;
     color: rgb(17, 16, 16);
 }
 
@@ -208,7 +245,7 @@ div.picture-container:nth-child(8) {
         background-position: 10% 35%;
     }
     .item2 p {
-        letter-spacing: 5px;
+
     }
 }
 @media only screen and (max-width: 700px) {
@@ -240,3 +277,51 @@ div.picture-container:nth-child(8) {
     }
 }
 /*hero section ends*/
+
+.video-container {
+    background-position: center center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.75rem 0.25rem rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.popup-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0,0,0,.8);
+    height: 100%;
+    width: 100%;
+}
+
+.container .popup-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+
+.popup-video span {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}

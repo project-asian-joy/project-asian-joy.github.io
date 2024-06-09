@@ -1,10 +1,77 @@
+AOS.init();
+
+//  Work experience cards
+
+const experiencecards = document.querySelector(".experience-cards");
+const exp = [
+  {
+    title: "Memory Lane: Chronicles of Boston Chinatown",
+    cardImage: "assets/images/experience-page/ongoing-projects/MemoryLane.png",
+    place: "Role-playing video game",
+    time: "2023 - present",
+    desp: "Centered on the personal histories of Chinatown, I blend immersive gameplay with narratives that preserve and celebrate Boston Chinatown's rich legacy and cultural heritage. In doing so, I compel players to consider the complexities of institutional expansion, gentrification, and environmental injustices and their profound impact on the community.",
+  },
+  {
+    title: "DocuSnap",
+    cardImage: "assets/images/experience-page/IHT_photo.png",
+    place: "Open Source Web Site",
+    time: "2024 - present",
+    desp: "I'm creating a template for a community-maintained open source project that makes setting up a platform for documentary photographers, photojournalists, and archivists simple, fast, and less cumbersome. I want to enable people to have a full-fledged website to showcase meaningful images so that they can spend time capturing moments of time and history.",
+  },
+  {
+    title: "Unapologetic Aspirations",
+    cardImage: "assets/images/experience-page/RWP_photo.png",
+    place: "Published Articles",
+    time: "2024 - present",
+    desp: "I contribute investigative articles to Sampan newspaper, the only bilingual Chinese-English newspaper in New England. that aim to disrupt conventional narratives and shed light on overlooked voices and perspectives within the Boston Chinatown and broader Asian American community.",
+  },
+  {
+    title: "Reggie Wong Park Web Site",
+    cardImage: "assets/images/experience-page/DocuSnap.png",
+    place: "Web Site Development",
+    time: "2024 - present",
+    desp: "In collaboration with nonprofit organization Friends of Reggie Wong Park, I'm volunteering to create a Web site that offers visitors a glimpse into the vital work and vibrant community at Reggie Wong Park and that amplify the organization's mission, impact, and visibility.",
+  },
+];
+
+const showCards2 = () => {
+  let output = "";
+  exp.forEach(
+    ({ title, cardImage, place, time, desp }) =>
+      (output += `        
+    <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
+      <div class="card card1">
+        <img src="${cardImage}" class="featured-image"/>
+        <article class="card-body">
+          <header>
+            <div class="title">
+              <h3>${title}</h3>
+            </div>
+            <p class="meta">
+              <span class="pre-heading">${place}</span><br>
+              <span class="author">${time}</span>
+            </p>
+            <ol>
+              ${desp}
+            </ol>
+          </header>
+        </article>
+      </div>
+    </div>
+      `)
+  );
+  experiencecards.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showCards2);
+
+
 /*Research Details Table*/
 
 const researchTable = document.querySelector(".main");
 
 const research = [
   {
-    title: "A Batch Normalized Inference Network Keeps the KL Vanishing Away",
+    title: "Preview: Immigrant History Trail Paves Way for Chinatown’s Legacy",
     authors:
       "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu",
     conferences:
@@ -14,7 +81,7 @@ const research = [
     image: "assets/images/research-page/inteferenceNetwork.png",
     citation: {
       vancouver:
-        "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu. A Batch Normalized Inference Network Keeps the KL Vanishing Away. The 58th Annual Meeting of the Association for Computational Linguistics 2020.",
+        "https://sampan.org/2024/boston/preview-immigrant-history-trail-paves-way-for-chinatowns-legacy/",
     },
     abstract:
       "This is currently left empty and this can be considered as a dummy data 1",

@@ -44,10 +44,17 @@ body{
   font-family: "Poppins";
 }
 #home,
+#home-hero,
 #particles-js {
   position: relative;
   height: 100vh;
   width: 100%;
+}
+
+#home-hero {
+  background-image : url('assets/images/education-page/edTimeline1.png');
+  z-index : -10;
+  background: rgba(155,20,20,.5);  
 }
 
 .section {

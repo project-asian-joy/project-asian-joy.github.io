@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Pride</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/33276862fa.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/flipbook.js" defer></script>
+    <script src="js/fireworks.js" defer></script>
+
+</head>
+<body>
+    <div class="home" id="home">
+        <h1><span class="lavender">We</span><span class="baby-blue">lc</span><span class="brown">ome</span> to <span class="red">C</span><span class="orange-red">a</span><span class="orange">m</span><span class="yellow">p</span> <span class="yellow-green">P</span><span class="green">r</span><span class="blue">i</span><span class="blue-violet">d</span><span class="purple">e</span>!</h1>
+        <div id="mascot" class="mascot" style="visibility: hidden;">
+            <img src="img/mascot.png" alt="pride mascot">
+        </div>
+        <br>
+        
+        <button id="toCabin" class="button" onClick="load_page('loader_left','home','cabin'); savedMascot();" alt="view scrapbook and write letters">Memories & Reflections</button>
+        <button id="toEscapeRoom" class="button" onClick="load_page('loader_left','home','escape_room'); savedMascot(); enterEscapeRoom();" alt="embark on mission to rescue camp mascot">Escape Room Activity</button>
+        <button id="toMusic" class="button" onClick="load_page('loader_right','home','enjoy_music'); exploredNature();" alt="listen to music">Music to Our Ears</button>
+        <button id="toFireworks" class="button" onClick="load_page('loader_right','home','fireworks_celebration'); watchedFireworks();" alt="celebrate wins by setting off fireworks">Fireworks Celebration</button>
+        <button id="toCampfire" class="button" onClick="load_page('loader_right','home','campfire_chatroom')" alt="sit around campfire to chat and share stories">Campfire Chats</button>
+
+        <button id="mountain" class="button_clear" onClick="revealBaldwinBook(); alert('James Baldwin published “Go Tell It on the Mountain” in 1956, offering the world a novel that was “pivotal in American gay literature,” according to many critics.')" alt="Go Tell It On the Mountain by James Baldwin"></button>
+        
+        <!--
+            <button id="cook" class="button_clear" alt="Tim Cook"></button>
+        -->
+        <p id="home_footer">Click around with your mouse to explore camp, starting with the directional arrows on the guiding post! </p>
+
+    </div>
+
+    <div class="loader-left" id="loader_left">
+        <img src="img/walk_left.gif" alt="walking to destination">
+    </div>
+    <div class="loader-right" id="loader_right">
+        <img src="img/walk_right.gif" alt="walking to destination">
+    </div>
+
+    <div class="cabin" id="cabin">
+
+        <div class="black-cat">
+            <img src="img/black_cat_clock.gif">
+        </div>
+        <div class="back-home">
+            <button id="back_right" class="button" onClick="load_page('loader_right','cabin','home')" alt="go back">
+                <p id="buttonText_goBack">Go Back</p>
+                <img src="img/back_arrow.png">
+            </button>
+        </div>
+
+        <button id="scrapbook" class="button_clear" onClick="load_page('loader_right','cabin','scrapbook_album')" alt="View Album"></button>
+
+        <button id="violet" class="button_clear" onClick="revealVioletQuill(); alert('The Violet Quill brought together several of the most important gay literary figures of the period at the birth of a definable gay literaturein the 1980s.');" alt="The Violet Quill"></button>
+        <button id="black_cat" class="button_clear" onClick="revealBlackCatTavern(); alert('Black Cat Tavern saw one of the biggest civil rights demonstration the LGBTQ+ community had produced in 1967, also called the “birthplace of a worldwide movement.”');" alt="Black Cat Tavern"></button>
+        <button id="donut" class="button_clear" onClick="revealDonutsRiot();alert('The Cooper Do-nuts Riot was a small uprising in response to police harassment of LGBT people at the 24-hour Cooper Do-nuts cafe in Los Angeles in May 1959, 10 years prior to Stonewall riots.');" alt="Cooper Do-nuts Riot"></button>
+
+    </div>
+    
+    <div class="scrapbook-album" id="scrapbook_album">
+    
+        <button id="prev_btn" class="flipbook-button">
+            <i class="fas fa-arrow-circle-left"></i>
+        </button>
+
+        <div id="book" class="book">
+            <div id="p1" class="paper">
+                <div class="front">
+                    <div id="f1" class="front-content">
+                        <br><br>
+                        <img src="img/scrapbook_frontCover.png">
+                        <h1>My Time at<br> <span class="red">C</span><span class="orange-red">a</span><span class="orange">m</span><span class="yellow">p</span> <span class="yellow-green">P</span><span class="green">r</span><span class="blue">i</span><span class="blue-violet">d</span><span class="purple">e</span> </h1>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b1" class="back-content">
+                        <div class="frame">
+                            <img id="i1_savedMascot" src="img/mascot.png" alt="saved mascot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="f2" class="front-content">
+                        <h1 id="t1_savedMascot"></h1>
+                        <p id="d1_savedMascot" class="scrapbook-content">Huh, where's the mascot that's all over Camp Pride's flyers?</p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b2" class="back-content">
+                        <div class="frame">
+                            <img id="i2_exploreNature" src="img/exploreNature.PNG" alt="explored nature">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="f3" class="front-content">
+                        <h1 id="t2_exploreNature"></h1>
+                        <p id="d2_exploreNature" class="scrapbook-content">🎵</p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b3" class="back-content">
+                        <div class="frame">
+                            <img id="i3_birdwatching" src="img/birdwatching.PNG" alt="found blue tit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p4" class="paper">
+                <div class="front">
+                    <div id="f4" class="front-content">
+                        <h1 id="t3_birdwatching"></h1>
+                        <p id="d3_birdwatching" class="scrapbook-content">*tweet*</p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b4" class="back-content">
+                        <div class="frame">
+                            <img id="i5_fireworks" src="img/fireworks.PNG" alt="watched fireworks">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p5" class="paper">
+                <div class="front">
+                    <div id="f5" class="front-content">
+                        <h1 id="t5_fireworks"></h1>
+                        <p id="d5_fireworks" class="scrapbook-content">Thought I heard something go boom(!)</p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b5" class="back-content">
+                        <div class="frame">
+                            <img id="i6_mountain" src="img/james_baldwin.PNG" alt="James Baldwin">
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p6" class="paper">
+                <div class="front">
+                    <div id="f6" class="front-content">
+                        <h1 id="t6_mountain"></h1>
+                        <p id="d6_mountain" class="scrapbook-content">＾ ⋏ ＾</p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b6" class="back-content">
+                        <div class="frame">
+                            <img id="i7_donutsRiot" src="img/donuts_riot.PNG" alt="Cooper Do-nuts Riot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p7" class="paper">
+                <div class="front">
+                    <div id="f7" class="front-content">
+                        <h1 id="t7_donutsRiot"></h1>
+                        <p id="d7_donutsRiot" class="scrapbook-content">＾○ ⋏ ○＾</p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b7" class="back-content">
+                        <div class="frame">
+                            <img id="i8_blackCat" src="img/black_cat.PNG" alt="Black Cat Tavern">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p8" class="paper">
+                <div class="front">
+                    <div id="f8" class="front-content">
+                        <h1 id="t8_blackCat"></h1>
+                        <p id="d8_blackCat" class="scrapbook-content">＾○ ⋏ ○＾</p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b8" class="back-content">
+                        <div class="frame">
+                            <img id="i9_violets" src="img/violet_quill.PNG" alt="The Violet Quill Club">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p9" class="paper">
+                <div class="front">
+                    <div id="f9" class="front-content">
+                        <h1 id="t9_violets"></h1>
+                        <p id="d9_violets" class="scrapbook-content">Roses are red, _________ are blue...</p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b9" class="back-content">
+                        <img src="img/scapbook_backCover.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="next_btn" class="flipbook-button">
+            <i class="fas fa-arrow-circle-right"></i>
+        </button>
+
+        <button id="back_right" class="button scrapbook-page" onClick="load_page('loader_right','scrapbook_album','cabin')" alt="go back">
+            <p id="buttonText_goBack">Go Back</p>
+            <img src="img/back_arrow.png">
+        </button>
+
+    </div>
+
+    <div class="escape-room" id="escape_room">
+        <p>“If you’re prat of a group that’s called 'other' — a group that does not get the 
+            chance to be center stage — build your own stage, and make them see you. Your 
+            queerness is beautiful, your slacknebs is beautiful, your compassion, your 
+            uiderstandnng, your fight for people woh may be different from you is beautiful."
+        </p>
+        <input type="text" id="passcode" name="passcode" placeholder="enter passcode" onchange="checkPassword();">
+        <!--
+        <div class="back-home">
+            <button id="back_right" class="button" onClick="load_page('loader_right','escape_room','home')" alt="go back">
+                <p id="buttonText_goBack">Go Back</p>
+                <img src="img/back_arrow.png">
+            </button>
+        </div>
+    -->
+        <button id="scrapbook" class="button_clear" onClick="load_page('loader_right','cabin','scrapbook_album')" alt="View Album"></button>
+    </div>
+    <div class="enjoy-music" id="enjoy_music">
+
+        <video id="video_slide" class="video-slide active" src="/av/v_violets.mp4" autoplay muted loop></video>
+        <audio id="music_audio" loop>
+            <source src="/av/sounds_violets.mp3" type="audio/mp3">
+        </audio>
+
+        <div id="music_content" class="content">
+            <h1 id="music_title">The Sapphic Violet<br>
+            <span id="music_subtitle">A Flower Defining LGBTQ+ Movement</span>
+            </h1>
+            <p id="music_desc">Violets have been associated with lesbian love since the 6th century, thanks to the work of the greek poet Saphho, from the isle of Lesbos. Much of her poetry centered around the relationships and love between women, who she often described as wearing garlands of the flowers and other plants. <br><br> In the 1960s and 70s, demonstrators and activists wore lavender during events that included a march to commemorate the Stonewall Riots; decades later after the 2016 presidential election, Gilbert Baker reworked his rainbow flag design to include a lavender stripe so that the flag would have “another color to represent diversity in the age of Trump.” 
+        </div>
+
+        <div id="music_option_icons" class="music-option-icons">
+            <a href="#" onclick="toggleContent();"><i class="fas fa-solid fa-indent white"></i></a>
+            <br>
+            <a href="#" onclick="playNature(); wentBirdwatching();"><i class="fas fa-solid fa-seedling white"></i></a>
+            <a href="#" onclick="playMusic();"><i class="fas fa-solid fa-music white"></i></a>
+            <a href="#" onclick="playBTS();"><i class="fas fa-solid fa-star white"></i></a>
+        </div>
+
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+
+        <button id="back_left" class="button" onClick="load_page('loader_left','enjoy_music','home'); audio.pause()" style="top:80px;" alt="go back">
+            <p id="buttonText_goBack">Go Back</p>
+            <img src="img/back_arrow.png">
+        </button>
+
+
+    </div>
+
+    <div class="fireworks-celebration" id="fireworks_celebration">
+        <canvas></canvas>
+        <div class="back-home">
+            <button id="back_left" class="button" onClick="load_page('loader_left','fireworks_celebration','home')" alt="go back">
+                <p id="buttonText_goBack">Go Back</p>
+                <img src="img/back_arrow.png">
+            </button>
+        </div>
+
+    </div>
+    <div class="campfire-chatroom" id="campfire_chatroom">
+        <div class="join-container">
+			<header class="join-header">
+				<h1><i class="fa-solid fa-fire orange"></i> Campfire Chats</h1>
+			</header>
+			<main class="join-main">
+				<form action="#" onsubmit="return load_page('loader_left','campfire-chatroom','campfire-room')">
+					<div class="form-control">
+						<label for="username">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="room">Room of Topic Interest (can you figure out the references?)</label>
+						<select name="room" id="room">
+							<option value="General">General - We Who Shall Not Be Named</option> 
+							<option value="Music">'Cause I've still got a lot of fight left in me'</option> <!-- a nod to Rachel Platten's Fight Song -->
+							<option value="Entertainment">The House of Flowers</option> <!-- a nod to TV show series -->
+                            <option value="Books">Take Me to the Good Part</option> <!-- a nod to Audible's feature -->
+                            <option value="Sexuality">50 Shades of Love</option> <!-- a nod to 50 Shades of Grey  -->						</select>
+					</div>
+					<button type="submit" class="btn">Join Session</button>
+				</form>
+			</main>
+        </div>    
+    </div>
+    <div class="campfire-room">
+        <div class="chat-container">
+            <header class="chat-header">
+				<h1><i class="fa-solid fa-fire orange"></i> Campfire Chats</h1>
+                <button id="back_left" class="button scrapbook-page" onClick="load_page('loader_left','campfire-room','campfire-chatroom')" alt="go back">
+                    <p id="buttonText_goBack">Go Back</p>
+                    <img src="img/back_arrow.png">
+                </button>
+        
+                <a href="index.html" class="btn">Leave Room</a>
+            </header>
+            <main class="chat-main">
+                <div class="chat-sidebar">
+                    <h3><i class="fas fa-comments"></i> Room Name:</h3>
+                    <h2 id="room-name"></h2>
+                    <h3><i class="fas fa-users"></i> Users</h3>
+                    <ul id="users"></ul>
+                </div>
+                <div class="chat-messages"></div>
+                </div>
+            </main>
+            <div class="room-form-container">
+                <form id="room-form">
+                    <input
+                        id="msg"
+                        type="text"
+                        placeholder="Enter Message"
+                        required 
+                        autocomplete="off"
+                    />
+                    <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+                </form>
+            </div>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.6/qs.min.js" integrity="sha512-3TmPrquYLaAsUmZKXRARTDC5siWhLAdBVqNo4dWpDABBtLU62AaoTaQJEvjxjExcZYurO6i1dnK85k8pPIBlRg==" crossorigin="anonymous"></script>
+    <script src="js/video.js"></script>
+    <script src="js/scavenger.js"></script>
+    <script src="js/escaperoom.js"></script>
+</div>
+    
+</body>
+</html>
