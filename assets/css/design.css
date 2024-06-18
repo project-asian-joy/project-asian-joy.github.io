@@ -243,6 +243,10 @@ div.picture-container:nth-child(8) {
     .hero .item1, .hero .item2, .hero .item3 {
         background-size: 300px;
         background-position: 10% 35%;
+
+        font-family: "Kanit", sans-serif;
+        font-weight: 200;
+        font-style: normal;
     }
     .item2 p {
 
@@ -262,12 +266,17 @@ div.picture-container:nth-child(8) {
         justify-content: space-evenly;
         height: 50vh;
     }
-    .hero .item1 {
+    .hero .item1, .hero .item2, .hero .item3 {
         background-position: 55% 50%;
         background-size: 172px;
         height: 50%;
         width: 100%;
         background-attachment: unset;
+
+        font-family: "Kanit", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+    
     }
     .hero .item2 {
         width: 100%;

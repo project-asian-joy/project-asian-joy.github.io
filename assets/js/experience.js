@@ -5,6 +5,13 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
+    title: "The Thousand Bloom: A Chrysanthemum Grows in Chinatown",
+    cardImage: "assets/images/experience-page/ongoing-projects/MemoryLane.png",
+    place: "Public art installation",
+    time: "2024 - present",
+    desp: "This temporary installation entails 1000 silk chrysanthemums wrapped up in bouquets of nine. These individual bouquets will be arranged along the fence to collectively create a larger visual image of a chrysanthemum. I plan to invite the community to engage in the process and bring the community, residents and business included, together to celebrate the symbolism and festivities around chrysanthemums. Actively applying to grants to make this happen in 2024 (<a href='https://docs.google.com/presentation/d/1mvADflDsE6Yk_vJMBNEq07I_xl4lqwGoD7jnG_l7CUQ/edit?usp=sharing' target='_blank'>see PPT</a>).",
+  },
+  {
     title: "Memory Lane: Chronicles of Boston Chinatown",
     cardImage: "assets/images/experience-page/ongoing-projects/MemoryLane.png",
     place: "Role-playing video game",
