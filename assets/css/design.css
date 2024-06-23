@@ -130,10 +130,10 @@ div.picture-container:nth-child(8) {
     background-image: url(../images/designs/culture/ImperialChineseGarden.png);
 }
 .item1 div.picture-container:nth-child(6) {
-    background-image: url(../images/designs/culture/lookingatyou.jpg);
+    background-image: url(../images/designs/culture/fearless.jpg);
 }
 .item1 div.picture-container:nth-child(7) {
-    background-image: url(../images/designs/culture/7.svg);
+    background-image: url(../images/designs/culture/lookingatyou.jpg);
 }
 .item1 div.picture-container:nth-child(8) {
     background-image: url(../images/designs/culture/8.svg);
@@ -237,6 +237,8 @@ div.picture-container:nth-child(8) {
 }
 .item2 p {
     color: rgb(17, 16, 16);
+    font-size: 17.5px;
+
 }
 
 @media only screen and (max-width: 950px) {
@@ -249,7 +251,7 @@ div.picture-container:nth-child(8) {
         font-style: normal;
     }
     .item2 p {
-
+        letter-spacing: normal;
     }
 }
 @media only screen and (max-width: 700px) {
