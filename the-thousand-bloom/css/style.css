@@ -22,18 +22,30 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
-.site-brand{
+.site-brand, 
+.site-brand-footer{
     color: #fff;
-    font-size: 1.6rem;
     font-family: "Eczar", serif;
     font-weight: 500;
     min-width: 39%;
     padding-left: 10px;
     opacity: 0.95;
 }
-.site-brand span{
+.site-brand span,
+.site-brand-footer span{
     font-weight: 600;
+    color: var(--gold);
 }
+
+.site-brand {
+    font-size: 1.6rem;
+}
+
+.site-brand-footer{
+    font-size: 1.2rem;
+
+}
+
 #navbar-show-btn{
     background: transparent;
     color: #fff;
@@ -46,6 +58,7 @@
 }
 #navbar-show-btn:hover{
     opacity: 1;
+    color: var(--gold);
 }
 
 /* navbar side menu */
@@ -72,7 +85,7 @@
 }
 #navbar-close-btn{
     background: none;
-    color: #fff;
+    color: #000;
     width: 35px;
     height: 35px;
     border-radius: 0.2rem;
@@ -104,6 +117,7 @@
 }
 .nav-link:hover{
     opacity: 0.8;
+    color: var(--gold);
 }
 
 /* header */
@@ -480,7 +494,7 @@ footer::before{
     content: "";
     position: absolute;
     background-color: var(--gold);
-    height: 4px;
+    height: 3px;
     top: 0;
     left: 0;
     width: 100%;
@@ -492,12 +506,15 @@ footer .site-brand{
 }
 .footer-item{
     margin: 3rem 0;
+    min-width: 350px;
 }
 .footer-item2{
     margin: 3rem 0;
+    min-width: 500px;
 }
 
-.footer-item a{
+.footer-item a,
+.footer-item2 a{
     font-size: 1.2rem;
     color: #fff;
     -webkit-transition: var(--trans);
@@ -517,6 +534,7 @@ footer .site-brand{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

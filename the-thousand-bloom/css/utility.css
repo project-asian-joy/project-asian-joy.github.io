@@ -59,9 +59,9 @@ button, input[type = "submit"]{
     padding: 0.7rem 2.4rem;
     border-radius: 0.2rem;
     font-weight: 600;
-    background-color: var(--green);
+    background-color: var(--gold);
     color: #fff;
-    border: 1px solid var(--green);
+    border: 1px solid var(--gold);
 }
 .btn:hover{
     opacity: 0.9;
