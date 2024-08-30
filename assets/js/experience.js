@@ -32,13 +32,7 @@ const exp = [
     time: "2024 - present",
     desp: "In collaboration with nonprofit organization Friends of Reggie Wong Park, I'm volunteering to create a Web site that offers visitors a glimpse into the vital work and vibrant community at Reggie Wong Park and that amplify the organization's mission, impact, and visibility.",
   },
-  {
-    title: "DocuSnap",
-    cardImage: "assets/images/experience-page/ongoing-projects/DocuSnap.jpg",
-    place: "Open Source Web Site",
-    time: "2024 - present",
-    desp: "I'm creating a template for a community-maintained open source project that makes setting up a platform for documentary photographers, photojournalists, and archivists simple, fast, and less cumbersome. I want to enable people to have a full-fledged website to showcase meaningful images so that they can spend time capturing moments of time and history.",
-  },
+
 ];
 
 const showCards2 = () => {
