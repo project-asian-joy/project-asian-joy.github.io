@@ -64,6 +64,12 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+    .blog-row-wide {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
     .gallery-item{
         margin: 0;
     }
