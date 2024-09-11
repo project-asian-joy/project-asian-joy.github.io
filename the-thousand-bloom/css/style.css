@@ -156,6 +156,11 @@ header{
     margin-top: -50px;
 }
 
+.header-title p span{
+    font-size: 1.5rem;
+    line-height: 2.2;
+}
+
 @-webkit-keyframes grow{
     0%{
         -webkit-transform: scale(.8);
