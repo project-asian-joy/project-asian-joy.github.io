@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*
 	Hyperspace by HTML5 UP
@@ -117,7 +118,10 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
+		font-family: 'Open Sans';
+		/*
 		font-family: Arial, Helvetica, sans-serif;
+		*/
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -191,6 +195,8 @@ input, select, textarea {
 
 	h1 {
 		font-size: 2.75em;
+		margin-top: -50px;
+		margin-left: 25px;
 	}
 
 		h1.major {
@@ -1841,7 +1847,7 @@ input, select, textarea {
 		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.6em;
+		font-size: 0.8em;
 		font-weight: bold;
 		height: calc(4.75em + 2px);
 		letter-spacing: 0.25em;
@@ -3742,7 +3748,7 @@ input, select, textarea {
 			border: 0;
 			color: rgba(255, 255, 255, 0.35);
 			display: block;
-			font-size: 0.6em;
+			font-size: 0.8em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
 			line-height: 1.75;
