@@ -1,138 +1,853 @@
+
 <!DOCTYPE html>
-<html lang="en" light-mode="dark">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Anita Yip | Project Asian Joy</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<head>
-    <title>Anita Yip | Home</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="joy, asian joy, project asian joy, the asian joy project, anita yip, artist, multimedia artist, joy as resistance" />
-    <meta name="description" content="Follow Asian joy here! This project is a years-long endeavor to find happiness." />
-    <!-- Robot.txt -->
-    <meta name="robots" content="index,follow" />
-    <meta name="Googlebot" content="index,follow" />
-    <meta name="AdsBot-Google" content="index,follow" />
-    <meta property="og:site_name" content="https://project-asian-joy.github.io/">
-    <meta property="og:title" content="Anita Yip | Home">
-    <meta property="og:description" content="Follow Asian joy here! This project is a years-long endeavor to find happiness.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://project-asian-joy.github.io/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="https://project-asian-joy.github.io/">
-    <meta name="application-name" content="Anita Yip | Home" />
-    <meta name="apple-mobile-web-app-title" content="Anita Yip | Home" />
-    <meta name="summary" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
-    <!--For Dark/Light mode Toggle-->
-    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-    <!--Import Google Icon Font-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="assets/css/preloader.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png">
-    <!-- Font awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <script defer src="./assets/js/dynamicTitle.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M11CMZ12Q"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/style.css">
 
-        gtag('config', 'G-M11CMZ12Q');
-    </script>
-</head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
-<body class="no-scroll-preload">
-    <!-- loader -->
-    <div class="loader-container">
-        <div class="atom">
-            <div class="electron"></div>
-            <div class="electron-alpha"></div>
-            <div class="electron-omega"></div>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/form.js"></script>
+    </head>
+
+<body>
+
+
+
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <!--=
+                        <li><a href="#writing">Writing</a></li>
+                        <li><a href="#photography">Photography</a></li>
+                        <li><a href="#digital">Digital</a></li>
+                        -->                        
+                        <li><a href="#speaking">Speaking</a></li>                        
+                        <li><a href="#contact">About / CV</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="#">Anita<em>Yip</em></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#top">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#featured">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Featured
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Projects
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="#writing">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Writing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#photography">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Photography
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#digital">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Digital Work
+                        </a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="#speaking">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Speaking
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            About / CV 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="social-icons">
+                <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+                <li><a href="https://www.linkedin.com/in/anitayip/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/project.asian.joy"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/ceruleanox/"><i class="fa fa-github"></i></a></li>
+                <!--
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                -->
+            </ul>
         </div>
-    </div>
 
-    <!--Dynamic Nav Bar-->
-
-    <!--Particles effect-->
-    <div id="home">
-        <section class="center">
-            <div id="home-hero"></div>
-        </section>
-    </div>
-    <center>
-        <!-- Home Section -->
-        <div class="text col-sm-6" style="margin-top: 140px;">Hi <span class="wave"><img src="assets/images/Hand.gif" width="35px"></span>&nbsp;, I'm <span class="header">Anita Yip</span>
-            <div class="center">
-                <div>
-                    <img src="assets/images/dp_female.svg" alt="" class="rounded-circle" height="200" width="200">
-                </div>
-                <br/>
-                <span style="display: inline;">Multimedia Artist, Creative Technologist,<br> Visual Artist, Documentary  Photographer,<br> Cultural Performing Artist
-                </span>
-                <div>
-                    <div class="social-icons">
-
-
-                        <a class="socialicon linkedin" href="https://www.linkedin.com/in/anitayip" target="_blank" rel="author">
-                            <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                        </a>
-
-
-                        <a class="socialicon instagram" href="https://www.instagram.com/project.asian.joy/" target="_blank" rel="author">
-                            <!-- svg code for instagram icon -->
-                            <svg class="instagram-icon" x="0px" y="0px" viewBox="0 0 202.5 202.5" style="enable-background:new 0 0 202.5 202.5;">
-                                <circle id="littleCircle" class="st0" cx="101" cy="101.5" r="18.9" />
-                                <circle id="shutter" class="st0" cx="101" cy="101.5" r="8" />
-                                <circle id="lens" class="st0" cx="125.5" cy="78.6" r="2.9" />
-                                <path id="camera" class="st0" d="M79,60.5h44c10.5,0,19,8.5,19,19v44c0,10.5-8.5,19-19,19H79c-10.5,0-19-8.5-19-19v-44
-                                                                                                        C60,69,68.5,60.5,79,60.5z" />
-                            </svg>
-                        </a>
-
-                        <a class="socialicon github" href="https://github.com/ceruleanox" target="_blank" rel="author">
-                            <!-- SVG code for Github icon -->
-                            <svg class="github-icon" width="45px" height="45px" viewBox="0 0 300 300">
-                                <!-- body -->
-                                <path id="body" d="M112.5,234.4v43.1c24.5,7.5,50.5,7.5,75,0V225c-0.4-11.1-4.9-21.6-12.7-29.6c30-3.4,59.5-23.5,59.5-64.1
-                                                            c0.9-13.9-3.3-27.7-11.8-38.7c4.1-11.6,3.7-24.4-1.3-35.7c0,0-11.2-3.7-37.5,13.8c-22.1-6.1-45.3-6.1-67.4,0
-                                                            C90.6,53.3,78.9,56.8,78.9,56.8c-5,11.3-5.4,24.1-1.3,35.7c-8.5,11.1-12.7,24.8-11.9,38.7c0.2,33.8,26.4,61.8,60.2,64.1
-                                                            c-5,4.7-8.1,11.1-8.6,18" />
-                                <!-- arm                             -->
-                                <path id="arm" d="M125.2,213.4c-13.9,7.8-31.5,2.8-39.3-11.2c-4.3-7.7-12-12.8-20.7-13.8c-11.2,0-4.6,6.4,0,9.4
-                                                            c6,5.1,10.8,11.5,13.8,18.8c2.9,7.4,7.7,24.1,41.5,17.8" />
-                            </svg>
-                        </a>
+        <div class="slider">
+            <div class="Modern-Slider content-section" id="top">
+                <!-- Item -->
+                <div class="item item-1">
+                    <div class="img-fill">
+                    <div class="image"></div>
+                        <div class="info">
+                        <div class="hero-text">
+                            <div class="hero-tagline">
+                                <h1>Where the community leads,<br><span class="highlighted-text">joy</span> follows.</h1>
+                            </div>
+                            <p>I create experiences that make culture visible, voices heard, and spaces joyful.</p>
+                            <p>Collaborating with communities, organizations, and institutions, I design events, exhibits, and participatory projects that spark connection, amplify voices, and reimagine public spaces—
+                            <br><br>Let's create something together!</p>
+                            <div class="white-button button">
+                                <a href="#featured">Learn More</a>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
+                <!-- // Item -->
+                <!-- Item -->
+                <div class="item item-2">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div class="hero-text">
+                            <div class="hero-tagline">
+                                <h1>Where the community leads,<br><span class="highlighted-text">joy</span> follows.</h1>
+                            </div>
+                            <p>I create experiences that make culture visible, voices heard, and spaces joyful.</p>
+                            <p>Collaborating with communities, organizations, and institutions, I design events, exhibits, and participatory projects that spark connection, amplify voices, and reimagine public spaces—
+                            <br><br>Let's create something together!</p>
+                            <div class="white-button button">
+                                <a href="#featured">Learn More</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+                <!-- Item -->
+                <div class="item item-3">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div class="hero-text">
+                            <div class="hero-tagline">
+                                <h1>Where the community leads,<br><span class="highlighted-text">joy</span> follows.</h1>
+                            </div>
+                            <p>I create experiences that make culture visible, voices heard, and spaces joyful.</p>
+                            <p>Collaborating with communities, organizations, and institutions, I design events, exhibits, and participatory projects that spark connection, amplify voices, and reimagine public spaces—
+                            <br><br>Let's create something together!</p>
+                            <div class="white-button button">
+                                <a href="#featured">Learn More</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
             </div>
         </div>
-    </center>
 
-    <br><br><br>
-    <!-- Dynamic footer section -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6D61F5TL4"></script>
-    <!-- Fetching our Google Tag Manager -->
+        <div class="page-content">
+            <section id="featured" class="content-section">
+                <div class="section-heading">
+                    <h1>Featured<br><em>Projects</em></h1>
+                    <p>Community is both the inspiration  
+                    <br>and the power behind my work</p>
+                </div>
+                <div class="section-content">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_1.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Reclaiming History</h4>
+                                <span>Public History & Collective Memory</span>
+                                <p>On Feb 25, we are launching a permanent exhibit a permanent exhibit that celebrates the stories and resilience of Boston’s Chinatown, Little Syria, and New York Streets neighborhoods. RSVP <a href="https://bit.ly/rh-launch">here</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_2.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Hidden Nature</h4>
+                                <span>Community Healing & Participation</span>
+                                <p>Cultivating a sense of stewardship and connection to shared spaces, we offered guided nature therapy and participatory art in a neighborhood with visions for more open and green space</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_3.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>The Thousand Bloom</h4>
+                                <span>Cultural Activation & Spatial Justice</span>
+                                <p>On October 26, 2024, 100 community members gathered to celebrate Chinatown’s first-ever Double Ninth Festival, a day dedicated to honoring and caring for elders. </p>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_4.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            
+                            <div class="text-content">
+                                <h4>AA Ballet at the Beach</h4>
+                                <span>Cultural Activation & Spatial Justice</span>
+                                <p>Asian American Ballet at the Beach centers Asian American ballet dancers in a setting and art form where they are rarely seen. Through participatory photography and live performance, the project invites collective presence and joy in public space.</p>
+                            </div> 
+                        </div>
+                        -->
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_5.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Waves of Joy</h4>
+                                <span>Empowerment and Writing</span>
+                                <p>Waves of Joy is a public writing circle for women and gender-diverse individuals of Asian descent across Massachusetts ready to shift narratives—starting with their own. Through community and practice, we learn how to be courageous with our stories.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_6.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Control Alt Delete</h4>
+                                <span>Digital Media for Social Change</span>
+                                <p>This Choose-Your-Own-Adventure style storygame is named after a nonprofit called  Control Alt Delete, which  helps people escape domestic violence. Through interactive storytelling, players are put in the shoes of someone trying to reset their life. </p>
+                            </div>
+                        </div>
+                            <!--
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_3.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Proin sit amet fringilla erat</h4>
+                                <span>Convallis</span>
+                                <p>#9 Suspendisse suscipit nulla sed nisl fermentum, auctor suscipit nunc rhoncus. Proin faucibus metus diam, nec hendrerit purus pharetra in.</p>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </section>
+            <!--
+            <section id="projects" class="content-section">
+                <div class="section-heading">
+                    <h1>Body of<br><em>Work</em></h1>
+                    <p>As a citizen artist, my work begins with 
+                    <br>people, place, and lived experience.</p>
+                </div>
+                <div class="section-content">
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="assets/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
-    <script src="assets/js/particle.js"></script>
+                </div>
+                
+                <div class="section-content">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="img/portfolio_big_1.jpg" data-lightbox="image"><img src="img/portfolio_1.jpg" alt="image 1"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_2.jpg" data-lightbox="image"><img src="img/portfolio_2.jpg" alt="image 2"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_3.jpg" data-lightbox="image"><img src="img/portfolio_3.jpg" alt="image 3"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_4.jpg" data-lightbox="image"><img src="img/portfolio_4.jpg" alt="image 4"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="img/portfolio_big_5.jpg" data-lightbox="image"><img src="img/portfolio_5.jpg" alt="image 5"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            <section id="writing" class="content-section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h1>This is a <em>company</em> presentation.</h1>
+                            <p>Praesent pellentesque efficitur magna, sed pellentesque neque malesuada vitae.</p>
+                        </div>
+                        <div class="text-content">
+                            <p>In eget ipsum sed lorem vehicula luctus. Curabitur non dolor rhoncus, hendrerit justo sit amet, vestibulum turpis. Pellentesque id auctor tellus, vel ultricies augue. Duis condimentum aliquet blandit. Fusce rhoncus et eros ut pharetra. Phasellus convallis ultricies ligula ac gravida.</p>
+                        </div>
+                        <div class="accent-button button">
+                            <a href="#blog">Continue Reading</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="box-video">
+                            <div class="bg-video" style="background-image: url(https://unsplash.imgix.net/photo-1425036458755-dc303a604201?fit=crop&fm=jpg&q=75&w=1000);">
+                                <div class="bt-play">Play</div>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="100%" height="520" src="https://www.youtube.com/embed/j-_7Ub-Zkow?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="photography" class="content-section">
+                <div class="section-heading">
+                    <h1>Blog<br><em>Entries</em></h1>
+                    <p>Curabitur hendrerit mauris mollis ipsum vulputate rutrum. 
+                    <br>Phasellus luctus odio eget dui imperdiet.</p>
+                </div>
+                <div class="section-content">
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                              <li><a href="#tab1" class="active">July 2018</a></li>
+                              <li><a href="#tab2">June 2018</a></li>
+                              <li><a href="#tab3">May 2018</a></li>
+                              <li><a href="#tab4">April 2018</a></li>
+                            </ul>
+                            <section id="first-tab-group" class="tabgroup">
+                                <div id="tab1">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_1.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Integer ultrices augue</h4>
+                                                    <span>25 July 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_2.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Cras commodo odio ut</h4>
+                                                    <span>16 July 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_3.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Sed at massa turpis</h4>
+                                                    <span>10 July 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab2">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_3.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Sed at massa turpis</h4>
+                                                    <span>30 June 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_1.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Lorem ipsum dolor sit</h4>
+                                                    <span>24 June 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_2.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Cras commodo odio ut</h4>
+                                                    <span>12 June 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab3">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_2.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Cras commodo odio ut</h4>
+                                                    <span>26 May 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_1.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Lorem ipsum dolor sit</h4>
+                                                    <span>22 May 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_3.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Integer ultrices augue</h4>
+                                                    <span>8 May 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab4">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_1.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Lorem ipsum dolor sit</h4>
+                                                    <span>26 April 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>                                
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_3.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Integer ultrices augue eu</h4>
+                                                    <span>24 April 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_2.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Cras commodo odio ut</h4>
+                                                    <span>20 April 2018</span>
+                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section> 
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            -->
+            
+            <section id="projects" class="content-section">
+                <div class="section-heading">
+                    <h1>Project<br><em>Portfolio</em></h1>
+                    <p>Experiential, event-based projects across art, writing, and media 
+                    <br>exploring culture, community, and creative expression</p>
+                </div>
+                <div class="section-content">
+                    <!--
+                    <div class="section-content-subheading">
+                        <span class="highlighted-text">Projects</span>
+                    </div>
+                    <div class="section-content-subheading">
+                        <span class="highlighted-text">Writing</span>
+                        <p>I explore history, culture, and community through articles and short memoirs, focusing on the stories that shape our collective memory. My work highlights spaces, people, and experiences that are often overlooked, inviting readers to reflect and connect.</p>
+                            <h3>Articles for the <em>Sampan Newspaper</em></h3>
+                            <p>
+                                I contribute investigative articles that aim to disrupt conventional narratives and shed light on overlooked voices and perspectives within the Boston Chinatown and broader Asian American community to <a href="https://www.sampan.org/" target="_blank">Sampan newspaper</a>, the only bilingual Chinese-English newspaper in New England. 
+                                Notable pieces include:  <br><br>
+                                * <b>Immigrant History Trail:</b> introducing the trail and impact and meaning for local communities.<br>
+                                * <b>Josiah Quincy Elementary School:</b> reflecting on how the school has evolved—much for the better—since I attended.</li>
+                                </ul>
+                            </p>
+                            <a href="https://www.sampan.org/" target="_blank" class="link-button">Read My Sampan Articles</a>
+
+                            <h3>Micro-Memoir</h3>
+                            <p>
+                                My micro-memoir is published in the library and preserves Phillips Square as it once was, offering a snapshot of the past as a cultural artifact. It captures personal and communal memory, showing how spaces evolve and how stories endure.
+                            </p>
+                            <a href="https://www.librarylink.com/" target="_blank" class="link-button">Read the Micro-Memoir</a>
+
+                    </div>
+                    -->
+                    <div class="section-content-subheading">
+                        <span class="highlighted-text">Photography</span>
+                        <br><br>
+                        
+                    </div>
+                    <div>
+                        I approach documentary photography with curiosity and care, focusing on real moments as they unfold.
+                        <br><br> I’m actively learning in real-world settings and available to assist at events, helping while sharpening my eye for story and detail.
+                        <br><br>
+                    </div>
+                    <div class="masonry">
+
+                        <!--
+                        <div class="row">
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="img/portfolio_big_1.jpg" data-lightbox="image"><img src="img/portfolio_1.jpg" alt="image 1"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_2.jpg" data-lightbox="image"><img src="img/portfolio_2.jpg" alt="image 2"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_3.jpg" data-lightbox="image"><img src="img/portfolio_3.jpg" alt="image 3"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_4.jpg" data-lightbox="image"><img src="img/portfolio_4.jpg" alt="image 4"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="img/portfolio_big_5.jpg" data-lightbox="image"><img src="img/portfolio_5.jpg" alt="image 5"></a>
+                                </div>
+                            </div>
+                        </div>
+                    -->
+                                                    <div class="item">
+                                <div class="col-md-8">
+                                    <a href="img/portfolio_big_1.jpg" data-lightbox="image"><img src="img/portfolio_1.jpg" alt="image 1"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_2.jpg" data-lightbox="image"><img src="img/portfolio_2.jpg" alt="image 2"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_3.jpg" data-lightbox="image"><img src="img/portfolio_3.jpg" alt="image 3"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_4.jpg" data-lightbox="image"><img src="img/portfolio_4.jpg" alt="image 4"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="img/portfolio_big_5.jpg" data-lightbox="image"><img src="img/portfolio_5.jpg" alt="image 5"></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>            
+            </section>
+           
+            <section id="speaking" class="content-section">
+                <div class="section-heading">
+                    <h1>Speaking<br><em>Engagements</em></h1>
+                    <p>I share stories that need to be heard 
+                    <br>Invite me to inspire your audience and activate community</p>
+                </div>
+                <div class="section-content">
+                    <div>
+                        <div class="container">
+                            <!-- Left Column (Images) -->
+                            <div class="left-column">
+                                <img src="img/speaker_1.jpg" alt="Anita Yip speaks at Greater Boston Chamber of Commerce">
+                                <img src="img/speaker_2a.jpg" alt="Anita Yip speaks at Asian Community Fund AAPI Arts & Culture Summit">
+                            </div>
+
+                            <!-- Right Column (Text Content) -->
+                            <div class="right-column">
+                                <div class="text-block">
+                                <p>Recognized as a Ten Outstanding Young Leader by the Greater Boston Chamber of Commerce and honored as a Recent Outstanding Graduate by Boston Latin School, I’ve had the privilege of speaking in rooms that shaped me—from young professionals finding their footing to artists, organizers, and civic leaders gathered at the The Boston Foundation’s Asian Community Fund AAPI Arts & Culture Summit. In every space, I come back to the same core belief: community changes everything.</p>
+                                <p>A lot of what I share comes from lived experience. Resilience has meant choosing to keep showing up, to keep building, and to keep believing in collective possibility even when it would be easier not to.  I believe art is how we tell the truth about who we are, how we honor cultural memory, and  how we imagine futures that don’t yet exist.</p>
+                                <p>Whether I’m speaking to students, cross-sector leaders, or emerging changemakers, I leave audiences with next steps: build community on purpose. Lead because you care. Remember that the spaces we create for one another often matter more than the platforms we stand on.</p>
+                                <p>If you’re looking for a speaker who will move a room from inspiration to action, I invite you to bring me into your next gathering.</p>                                
+                                </div>
+                            </div>
+                    </div>
+                </div>            
+            </section>
+            <section id="about" class="content-section">
+                <div class="section-heading">
+                    <h1>About the<br><em>Artist</em></h1>
+                    <p>I am a citizen artist, art instigator, culture seeder
+                    <br>Exploring the power of creativity to connect and energize community</p>
+                </div>
+                <div class="section-content">
+                    <div>
+                        <p>Anita Yip is a citizen artist, cultural strategist, and community builder. She makes work where art, memory, and collective power meet—through photography, writing, public programs and experiences that invite people to engage with history, place, and one another.</p>
+                        <p>Under the moniker Project Asian Joy, Anita brings overlooked stories to life, transforming them into shared spaces for reflection, connection, and action. She sees as civic infrastructure: a way communities remember who they are, imagine who they can become, and invest in the people and spaces around them.</p>
+                        <p>Recognized as a Ten Outstanding Young Leader by the Greater Boston Chamber of Commerce and a Recent Outstanding Graduate of Boston Latin School, Anita also speaks widely about community, resilience, and the power of creativity to activate change. Her work invites audiences not just to witness culture, but to help shape it.</p>
+                    </div>
+                </div>            
+            </section>
+            <section id="contact" class="content-section">
+                <div id="map">                
+                </div>
+                <!--
+                <div id="map">                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                -->
+                <div id="contact-content">
+                    <div class="section-heading">
+                        <h1>Contact<br><em>Anita</em></h1>
+                        <p>For inquiries and collaborations 
+                        <br>reach out and start a conversation.</p>
+                        
+                    </div>
+                    <div class="section-content">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="312f37b6-a972-4a97-9b73-751a4cb203e4">
+                            <input type="text" name="name"  placeholder="Your name..." required>
+                            <input type="email" name="email"  placeholder="Your email..." required>
+                            <textarea name="message"  placeholder="Start typing your message here" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <!--
+                    <div class="section-content">
+                        <form id="contact" action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                  </fieldset>
+                                </div>
+                                 <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                                  </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    -->
+                </div>
+            </section>
+            <section class="footer">
+                <p>Copyright &copy; 2026 Project Asian Joy by Anita Yip </p>
+            </section>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 
 </body>
-
 </html>
